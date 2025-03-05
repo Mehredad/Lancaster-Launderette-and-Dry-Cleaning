@@ -1,18 +1,12 @@
-# Welcome to your Lovable project
+# Lancaster Launderette and Dry Cleaning Landing Page
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/980f8a40-9bf1-4edf-a3b3-50cdfef950ee
+**URL**:
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/980f8a40-9bf1-4edf-a3b3-50cdfef950ee) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
 
 **Use your preferred IDE**
 
@@ -59,10 +53,6 @@ This project is built with .
 - React
 - shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/980f8a40-9bf1-4edf-a3b3-50cdfef950ee) and click on Share -> Publish.
 
 ## I want to use a custom domain - is that possible?
 
