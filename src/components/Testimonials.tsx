@@ -58,7 +58,7 @@ const Testimonials = () => {
     {
       name: "David Wilson",
       rating: 5,
-      comment: "Best dry cleaning in Lancaster. They managed to remove a stain from my favorite jacket that I thought was ruined. Will definitely use their services again.",
+      comment: "Best dry cleaning in London. They managed to remove a stain from my favorite jacket that I thought was ruined. Will definitely use their services again.",
       date: "1 month ago"
     },
     {
@@ -70,13 +70,13 @@ const Testimonials = () => {
     {
       name: "Michael Brown",
       rating: 5,
-      comment: "I've been using Lancaster Launderette for over a year now. The staff are friendly and professional, and the quality of the cleaning is consistently excellent.",
+      comment: "I've been using this Launderette for over a year now. The staff are friendly and professional, and the quality of the cleaning is consistently excellent.",
       date: "2 weeks ago"
     },
     {
       name: "Jennifer Smith",
       rating: 5,
-      comment: "The wash & fold service is a lifesaver for me. Everything comes back neatly folded and smelling fresh. Love that I can have a coffee while I wait for my self-service loads.",
+      comment: "The wash & fold service is a lifesaver for me. Everything comes back neatly folded and smelling fresh. Love that I can have a coffee while I wait.",
       date: "1 week ago"
     },
     {
@@ -120,8 +120,8 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section id="testimonials" className="section-padding">
-      <div className="container-custom">
+    <section id="testimonials" className="section-padding bg-gray-light">
+      <div className="container-custom max-w-6xl mx-auto px-8 md:px-12">
         <div 
           ref={titleRef}
           className={`text-center max-w-3xl mx-auto mb-16 transition-all duration-700 ${
@@ -147,9 +147,9 @@ const Testimonials = () => {
           </p>
         </div>
         
-        <div className="relative">
+        <div className="relative mx-auto max-w-5xl">
           {/* Scroll Controls */}
-          <div className="absolute top-1/2 -left-4 transform -translate-y-1/2 z-10">
+          <div className="absolute top-1/2 -left-5 lg:-left-8 transform -translate-y-1/2 z-10">
             <button 
               onClick={() => scroll('left')}
               disabled={scrollPosition <= 0}
@@ -164,7 +164,7 @@ const Testimonials = () => {
             </button>
           </div>
           
-          <div className="absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+          <div className="absolute top-1/2 -right-5 lg:-right-8 transform -translate-y-1/2 z-10">
             <button 
               onClick={() => scroll('right')}
               disabled={scrollPosition >= maxScroll}
@@ -182,14 +182,14 @@ const Testimonials = () => {
           {/* Testimonials Carousel */}
           <div 
             ref={scrollRef}
-            className="flex overflow-x-auto gap-6 pb-4 hide-scrollbar"
+            className="flex overflow-x-auto gap-6 pb-4 hide-scrollbar px-2"
             style={{ 
               scrollbarWidth: 'none',
               msOverflowStyle: 'none'
             }}
           >
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="min-w-[300px] md:min-w-[350px] flex-shrink-0">
+              <div key={index} className="min-w-[280px] max-w-[280px] md:min-w-[320px] md:max-w-[320px] flex-shrink-0">
                 <Testimonial {...testimonial} />
               </div>
             ))}
@@ -206,7 +206,7 @@ const Testimonials = () => {
                 <button 
                   key={index}
                   className={`w-2 h-2 rounded-full transition-all ${
-                    isActive ? 'bg-blue w-6' : 'bg-gray-light'
+                    isActive ? 'bg-blue w-6' : 'bg-gray-medium opacity-40'
                   }`}
                   onClick={() => {
                     if (!scrollRef.current) return;
