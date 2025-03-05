@@ -7,9 +7,8 @@ const Location = () => {
   const { ref: mapRef, isRevealed: mapRevealed } = useScrollReveal();
   
   const openingHours = [
-    { day: 'Monday - Friday', hours: '7:30 AM - 9:00 PM' },
-    { day: 'Saturday', hours: '8:00 AM - 7:00 PM' },
-    { day: 'Sunday', hours: '9:00 AM - 5:00 PM' }
+    { day: 'Monday - Saturday', hours: '8:00 AM - 6:00 PM' },
+    { day: 'Sunday', hours: '10:00 AM - 5:00 PM' }
   ];
 
   return (
@@ -19,7 +18,7 @@ const Location = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">Find Us</h2>
           <div className="h-1 w-20 bg-blue mx-auto mb-6"></div>
           <p className="text-gray-dark">
-            Conveniently located in the heart of Lancaster. Drop by for your laundry needs or just to enjoy a cup of coffee.
+            Conveniently located in the heart of London. Drop by for your laundry needs or just to enjoy a cup of coffee.
           </p>
         </div>
         
@@ -43,8 +42,8 @@ const Location = () => {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Our Location</h3>
                     <p className="text-gray-dark">
-                      39 Dalton Square<br />
-                      Lancaster LA1 1PP<br />
+                      28 Craven Terrace<br />
+                      London W2 3EL<br />
                       United Kingdom
                     </p>
                     <a 
@@ -94,7 +93,7 @@ const Location = () => {
                     <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
                     <p className="flex items-center text-gray-dark mb-1">
                       <span className="font-medium mr-2">Phone:</span>
-                      <a href="tel:+441524596401" className="hover:text-blue transition-colors">01524 596401</a>
+                      <a href="tel:+442077063145" className="hover:text-blue transition-colors">020 7706 3145</a>
                     </p>
                     <p className="flex items-center text-gray-dark">
                       <span className="font-medium mr-2">Email:</span>
@@ -115,8 +114,8 @@ const Location = () => {
           >
             <div className="rounded-xl overflow-hidden shadow-card h-full min-h-[400px] bg-white p-2">
               <iframe 
-                title="Lancaster Launderette & Dry Cleaning Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2339.7963118139837!2d-2.8026941499307893!3d54.047843403868766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b9a307cc18883%3A0x1ee78861e56b55e5!2sLancaster%20Launderette%20%26%20Dry%20Cleaning!5e0!3m2!1sen!2suk!4v1713358193018!5m2!1sen!2suk" 
+                title="London Launderette & Dry Cleaning Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1985056685507!2d-0.1797525234379293!3d51.5121507180352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760536452e9ae1%3A0xb1b88e70b4e05ae4!2s28%20Craven%20Terrace%2C%20London%20W2%203EL!5e0!3m2!1sen!2suk!4v1713531537424!5m2!1sen!2suk" 
                 className="w-full h-full min-h-[400px] rounded-lg"
                 style={{ border: 0 }}
                 allowFullScreen

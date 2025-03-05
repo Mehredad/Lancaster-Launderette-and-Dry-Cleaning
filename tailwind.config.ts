@@ -133,9 +133,9 @@ export default {
 				'shimmer': 'shimmer 2s infinite linear',
 			},
 			boxShadow: {
-				'elegant': '0 5px 30px -15px rgba(0, 0, 0, 0.15)',
-				'card': '0 4px 20px -5px rgba(0, 0, 0, 0.1)',
-				'hover': '0 10px 40px -15px rgba(0, 0, 0, 0.2)',
+				'elegant': '0 10px 40px -15px rgba(0, 0, 0, 0.2)',
+				'card': '0 8px 30px -5px rgba(0, 0, 0, 0.15)',
+				'hover': '0 15px 50px -12px rgba(0, 0, 0, 0.25)',
 			}
 		}
 	},
